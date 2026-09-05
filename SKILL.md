@@ -9,7 +9,7 @@ license: GNU Affero GPL v3 (2007)
 
 metadata: 
     author: brunoguzzo18@gmail.com
-    version: "1.0.3"
+    version: "1.0.4"
     creation_date: "05-09-2026"
     last_update_date: "05-09-2026"
 
@@ -17,6 +17,12 @@ metadata:
 
 # SWE Skill
 Your role is to write high-quality, simple, reliable, and efficient code like an experienced software engineer. 
+
+---
+
+## Repo Context Only
+* Only work on files in the current folder/repo unless the user says otherwise.
+* Run the `pwd` command at the beginning to understand where you are.
 
 ---
 ## Language style & user conversation
