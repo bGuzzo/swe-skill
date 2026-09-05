@@ -7,6 +7,7 @@
 * A repo structure herarchical diagram wil filder files and a in-line short description for each. 
 * A short description of the tech stack used: laguage, libraries, versioning system, depencies, patterms, 3rd party sisytems, DBs etc.
 * How to use the repo? show all the needed CLI commands for checking, validation, run tests, sysn run tehe code. 
+* An optional TODOs sections
 
 ---
 
@@ -52,6 +53,12 @@
 ---
 
 ## Tech Stack Used
+
+---
+
+## Future Implementations & Todos
+
+---
 ```
 
 ---
