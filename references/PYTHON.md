@@ -12,3 +12,17 @@ Rely on these guidelines when writing Python code or creating a new project.
 Python example snippets can be found inside the folder [snippets](../assets/python/snippets/); read the index file [PY_EXAMPLE.md](../assets/python/snippets/PY_EXAMPLE.md) to index the content.
 
 ---
+
+## Before Submitting Code to the User
+Always use Ruff and Mypy to check and format the code, and resolve all findings before submitting the code to the user.
+
+```bash
+uv sync
+uv run ruff check . --fix
+uv run ruff format .
+uv run mypy src tests
+```
+
+Keep iterating and fixing with `ruff` and `mypy` until they report 0 findings.
+
+---

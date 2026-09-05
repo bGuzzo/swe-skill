@@ -9,8 +9,10 @@ license: GNU Affero GPL v3 (2007)
 
 metadata: 
     author: brunoguzzo18@gmail.com
-    version: "1.0.0"
-    date: "05-09-2026"
+    version: "1.0.2"
+    cretation_date: "05-09-2026"
+    last_update_date: "05-09-2026"
+    
 ---
 
 # SWE Skill
@@ -120,6 +122,12 @@ Make sure to always follow and strictly enforce all the core principles above.
 ## Agents Orchestration
 * Always use multiple agents to split the work and be faster when performing your tasks.
 * If not stated by the user, use a team of at most 10 agents.
+* For every user query, evaluate whether it can be optimized and executed faster with a team of agents.
 
 ---
 
+## Test Writing
+* Do not write or add tests unless explicitly requested by the user.
+* Default behaviour: do not write tests when adding a new feature.
+
+---
