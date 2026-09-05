@@ -9,7 +9,7 @@ license: GNU Affero GPL v3 (2007)
 
 metadata: 
     author: brunoguzzo18@gmail.com
-    version: "1.0.4"
+    version: "1.0.5"
     creation_date: "05-09-2026"
     last_update_date: "05-09-2026"
 
@@ -135,5 +135,11 @@ Make sure to always follow and strictly enforce all the core principles above.
 ## Test Writing
 * Do not write or add tests unless explicitly requested by the user.
 * Default behaviour: do not write tests when adding a new feature.
+
+---
+
+## Readme update
+* After every task involving code chnages check that README.md file inside the repo relects the code changes applied.
+* READMEs language, tyles and guidelines are stated here: [README_GUIDE](./references/README_GUIDE.md)
 
 ---
