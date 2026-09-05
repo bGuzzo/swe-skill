@@ -13,6 +13,12 @@ Python example snippets can be found inside the folder [snippets](../assets/pyth
 
 ---
 
+## Before Writing Code
+* Check `pyproject.toml` to find Ruff, Mypy, or code style enforcers.
+* Then load those guidelines into context and use them when writing code to execute the user query.
+
+---
+
 ## Before Submitting Code to the User
 Always use Ruff and Mypy to check and format the code, and resolve all findings before submitting the code to the user.
 

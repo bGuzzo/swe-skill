@@ -9,10 +9,10 @@ license: GNU Affero GPL v3 (2007)
 
 metadata: 
     author: brunoguzzo18@gmail.com
-    version: "1.0.2"
-    cretation_date: "05-09-2026"
+    version: "1.0.3"
+    creation_date: "05-09-2026"
     last_update_date: "05-09-2026"
-    
+
 ---
 
 # SWE Skill
