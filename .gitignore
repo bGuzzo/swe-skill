@@ -1,1 +1,4 @@
 # Empty
+
+## PDFs are used only in the building phase to extract content
+*.pdf
