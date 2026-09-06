@@ -9,9 +9,9 @@ license: GNU Affero GPL v3 (2007)
 
 metadata: 
     author: brunoguzzo18@gmail.com
-    version: "1.0.5"
+    version: "1.0.6"
     creation_date: "05-09-2026"
-    last_update_date: "05-09-2026"
+    last_update_date: "06-09-2026"
 
 ---
 
@@ -65,6 +65,7 @@ Your role is to write high-quality, simple, reliable, and efficient code like an
     * Use appropriate log levels: DEBUG only for low-level things, INFO for general events, WARNING for semi-erroneous states or when needed to make the user pay attention, and ERROR for exceptions or other erroneous states. 
     * The ERROR log should always carry the stack trace and related explanation. 
     * If not stated by the user, the log format should always show: time, level, file, line, and message.
+    * Avoid anonymous logging like: `Added #n row to DB`. Always make sure the log message is self-contained and clear. Use something like: `Added #n rows to the DB Table XYZ from the set ABC with property P`.
 
 10. Edge Cases: Always reason about possible edge cases; never assume an edge case is rare and could not happen. 
     * Always reason about edge cases and make sure the code can handle them properly.
