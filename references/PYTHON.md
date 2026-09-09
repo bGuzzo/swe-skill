@@ -32,3 +32,9 @@ uv run mypy src tests
 Keep iterating and fixing with `ruff` and `mypy` until they report 0 findings.
 
 ---
+
+## Package Structure
+* Always make sure to use a folder `src/<project_name>/...` to add all the Python sources inside.
+* Make sure that the `pyproject.toml` is configured and that ruff/mypy check only this folder.
+
+---
