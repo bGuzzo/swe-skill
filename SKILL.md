@@ -146,7 +146,16 @@ Make sure to always follow and strictly enforce all the core principles above.
 
 ---
 
-
 ## Staging Files 
 * If you need to use and create temporary scripts or files, those should be removed before answering the user.
 * Those are noisy and should never be committed or tracked, so remove them as soon as possible.
+
+---
+
+## Planning
+* Before applying any code changes, long or short, simple or complex, always define a plan.
+    1. First check all the needed information and the status of the repo, and refresh the files in your context window.
+    2. Draft and refine a plan using an adversarial agent that challenges your decisions in order to follow the instructions from this `/swe-skill`.
+    3. Apply the changes.
+
+---
