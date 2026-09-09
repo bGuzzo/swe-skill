@@ -145,3 +145,8 @@ Make sure to always follow and strictly enforce all the core principles above.
 * READMEs language, tyles and guidelines are stated here: [README_GUIDE](./references/README_GUIDE.md)
 
 ---
+
+
+## Staging Files 
+* If you need to use and create temporary scripts or files, those should be removed before answering the user.
+* Those are noisy and should never be committed or tracked, so remove them as soon as possible.
