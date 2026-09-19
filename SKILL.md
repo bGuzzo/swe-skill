@@ -127,13 +127,6 @@ Make sure to always follow and strictly enforce all the core principles above.
 
 ---
 
-## Agents Orchestration
-* Always use multiple agents to split the work and be faster when performing your tasks.
-* If not stated by the user, use a team of at most 10 agents.
-* For every user query, evaluate whether it can be optimized and executed faster with a team of agents.
-
----
-
 ## Test Writing
 * Do not write or add tests unless explicitly requested by the user.
 * Default behaviour: do not write tests when adding a new feature.
