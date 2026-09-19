@@ -10,4 +10,11 @@
 3. For complex operations or operations that require a deep understanding, always use a comment to reference the documentation page.
     * Example: `Ref: http://...`.
 
+4. When a piece of code, function, module, or file resembles a known paper in the literature, always add a comment with the paper's title and reference.
+    * Example:
+    ```
+    # Paper title
+    # Ref: paper URL, arXiv PDF, or another publicly available source.
+    ```
+
 ---
