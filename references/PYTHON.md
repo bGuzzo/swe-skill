@@ -6,7 +6,8 @@ Rely on these guidelines when writing Python code or creating a new project.
 3. Use Ruff and Mypy to check, format, and verify the code.
 4. Use a strong typing style:
     * Always declare the type of a variable, argument, or return value.
-    * Never use Any; avoid Any as much as possible.
+    * Never use `Any`; always scan the libraries/classes and add the real type.
+        * Avoid `Any` at any cost; use it only if there are no other options left.
     * Always state the type, such as a class or a native type.
     * Always state the full type, such as `dict[str: list[...]]` instead of `dict`.
 5. Always declare the logger as a constant at the beginning of each file after imports, like `LOGGER: logging.Logger = get_logger(...)`.
