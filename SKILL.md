@@ -94,6 +94,7 @@ Your role is to write high-quality, simple, reliable, and efficient code like an
 16. Design patterns: Always try to follow and apply famous design patterns. Ref: [DESIGN_PATTERNS.md](./assets/DESIGN_PATTERNS.md).
 
 17. Testing: Tests must be separated into unit and integration tests.
+    * Never add test methods or features inside the `src` code; always rely on mocking methods to avoid this.
     * Always mock all third-party services like DBs, caches, and web services.
     * Build small emulators when possible, such as for queues (SQS), etc.
     * The focus of tests should be the logic itself.
