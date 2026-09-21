@@ -50,6 +50,8 @@ Keep iterating and fixing with `ruff` and `mypy` until they report 0 findings.
 ## Long Variable Type Declarations
 Declare the type when defining the variable; we are not using C anymore.
 
+Avoid the following:
+
 ```python
 asset_id: int
 clean_df: pd.DataFrame
