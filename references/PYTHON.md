@@ -44,3 +44,39 @@ Keep iterating and fixing with `ruff` and `mypy` until they report 0 findings.
 * Make sure that the `pyproject.toml` is configured and that ruff/mypy check only this folder.
 
 ---
+
+# Examples to Avoid
+
+## Long Variable Type Declarations
+Declare the type when defining the variable; we are not using C anymore.
+
+```python
+asset_id: int
+clean_df: pd.DataFrame
+clean_physical: pd.DataFrame
+df: pd.DataFrame
+end_dt: pd.Timestamp
+end_origin: int
+filtered_physical: pd.DataFrame
+filtered_returns: pd.DataFrame
+mask: pd.Series
+num_bars: int
+num_windows: int
+origin_idx: int
+price_cols: list[str]
+r_c: pd.Series
+r_h: pd.Series
+r_l: pd.Series
+r_o: pd.Series
+r_v: pd.Series
+required_window: int
+returns_array: NDArray[np.float64]
+returns_df: pd.DataFrame
+start_dt: pd.Timestamp
+start_origin: int
+t_end: str
+t_info: TickerInfo
+t_start: str
+ticker: str
+volume_sma: pd.Series
+```
