@@ -121,6 +121,10 @@ Your role is to write high-quality, simple, reliable, and efficient code like an
 
 25. Follow the guidelines from the book `Clean Code` inside [CLEAN_CODE.md](./assets/CLEAN_CODE.md) when writing code and especially when performing code refactoring.
 
+26. Add blank lines within the code to better separate the different blocks of a function and improve readability.
+    * For example, add blank lines after if/else and try/catch blocks and before return statements.
+    * Generalize this example and add blank lines to improve readability.
+
 ---
 
 ## Guidelines 
