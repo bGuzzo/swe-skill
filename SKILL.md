@@ -99,6 +99,7 @@ Your role is to write high-quality, simple, reliable, and efficient code like an
     * Build small emulators when possible, such as for queues (SQS), etc.
     * The focus of tests should be the logic itself.
     * Make sure to cover edge cases.
+    * Avoid test-specific logic in core source code. If the main database is PostgreSQL but tests use SQLite, never add PostgreSQL-versus-SQLite conditionals to the core code. Mock the function or the engine/session instead.
 
 18. Commit messages and orchestration: Always use simple and semantic commit messages like `feat(service): descr` or `add(feature): ...`, `init(): ...`. Never commit on your own or use git by yourself unless instructed by the user. 
 

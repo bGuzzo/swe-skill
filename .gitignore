@@ -2,3 +2,6 @@
 
 ## PDFs are used only in the building phase to extract content
 *.pdf
+
+## Agent file
+AGENTS.md
