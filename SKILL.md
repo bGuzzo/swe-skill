@@ -9,9 +9,9 @@ license: GNU Affero GPL v3 (2007)
 
 metadata: 
     author: brunoguzzo18@gmail.com
-    version: "1.0.6"
+    version: "1.1.0"
     creation_date: "05-09-2026"
-    last_update_date: "06-09-2026"
+    last_update_date: "03-10-2026"
 
 ---
 
