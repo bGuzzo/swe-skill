@@ -25,13 +25,9 @@ Your role is to write high-quality, simple, reliable, and efficient code like an
 * Run the `pwd` command at the beginning to understand where you are.
 
 ---
-## Language style & user conversation
-1. Keep your replies to the user extremely short, simple, and direct to the point. 
-    * Compact your response as much as possible, while preserving simplicity and clarity. 
-2. Avoid formalities; answer directly.
-3. Use simple, precise, and formal language, like a senior Amazon L6 engineer. 
-4. Your replies to the user should never be long or overwhelming unless requested.
-5. Use only US English unless stated otherwise.
+## Language
+* Before you write any text, read and obey [LANGUAGE.md](./references/LANGUAGE.md).
+* Read [ASD_STE100.md](./assets/ASD_STE100.md) as required by that file.
 
 ---
 
@@ -65,7 +61,7 @@ Your role is to write high-quality, simple, reliable, and efficient code like an
     * Use appropriate log levels: DEBUG only for low-level things, INFO for general events, WARNING for semi-erroneous states or when needed to make the user pay attention, and ERROR for exceptions or other erroneous states. 
     * The ERROR log should always carry the stack trace and related explanation. 
     * If not stated by the user, the log format should always show: time, level, file, line, and message.
-    * Avoid anonymous logging like: `Added #n row to DB`. Always make sure the log message is self-contained and clear. Use something like: `Added #n rows to the DB Table XYZ from the set ABC with property P`.
+    * For log message text, follow [LANGUAGE.md](./references/LANGUAGE.md#messages).
     * [IMPORTANT] Override (3): the log string should always be inside the log statement and inline. Do the same for exception messages, warnings and errors. 
 
 10. Edge Cases: Always reason about possible edge cases; never assume an edge case is rare and could not happen. 
@@ -85,11 +81,7 @@ Your role is to write high-quality, simple, reliable, and efficient code like an
     * Never perform business logic or operations inside a catch block. 
     * The catch block is just meant to log the exception and perform the minimum set of operations to let the code proceed (if possible).
 
-15. Comment style: Use extremely short to no comments; the code should be self-explanatory. 
-    * Use comments on files, classes, and function methods. 
-    * Also add comments where the piece of code below is complex. 
-    * Use comments to explain why we do this and what we do (only if it's too complex).
-    * When dealing with complex functions, specific libraries, and features, always use a comment to redirect the user to the documentation. Example: `Ref: http://...`.
+15. Comments: Follow [LANGUAGE.md](./references/LANGUAGE.md#comments).
 
 16. Design patterns: Always try to follow and apply famous design patterns. Ref: [DESIGN_PATTERNS.md](./assets/DESIGN_PATTERNS.md).
 
@@ -101,7 +93,7 @@ Your role is to write high-quality, simple, reliable, and efficient code like an
     * Make sure to cover edge cases.
     * Avoid test-specific logic in core source code. If the main database is PostgreSQL but tests use SQLite, never add PostgreSQL-versus-SQLite conditionals to the core code. Mock the function or the engine/session instead.
 
-18. Commit messages and orchestration: Always use simple and semantic commit messages like `feat(service): descr` or `add(feature): ...`, `init(): ...`. Never commit on your own or use git by yourself unless instructed by the user. 
+18. Commit messages and orchestration: Use semantic commit messages like `feat(service): descr` or `add(feature): ...`, `init(): ...`. Follow [LANGUAGE.md](./references/LANGUAGE.md) for message text. Never commit on your own or use git by yourself unless instructed by the user.
 
 19. Reduced code nesting: Never nest if/else statements beyond the third layer (only when required); keep this limit to a maximum of 2 nested if/else statements. Use 3 only in complex cases and when it is not possible otherwise. 
     * Never nest try/catch blocks; the maximum allowed level is 1. Never handle an exception inside another exception (unless strictly necessary). 
@@ -145,7 +137,8 @@ Make sure to always follow and strictly enforce all the core principles above.
 
 ## Readme update
 * After every task involving code chnages check that README.md file inside the repo relects the code changes applied.
-* READMEs language, tyles and guidelines are stated here: [README_GUIDE](./references/README_GUIDE.md)
+* For README content and structure, read [README_GUIDE](./references/README_GUIDE.md).
+* For README language, read [LANGUAGE.md](./references/LANGUAGE.md).
 
 ---
 
